@@ -3,7 +3,7 @@ My personal portfolio website
 
 --Additional items to work on--
 
-*Make links for projects
+*Make links for projects (done)
 *Add additional styling for projects section
 	-Division from top section and projects
 *Add additional details to decription of projects

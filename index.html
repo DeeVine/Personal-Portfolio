@@ -10,6 +10,8 @@
 
     <title>DARREN KWONG </title>
 
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
@@ -30,13 +32,10 @@
   Hello, <?js= firstName ?> <?js= lastName ?>.
   </script>
    -->
-
     <!-- Static navbar -->
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-
-
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -45,8 +44,6 @@
          <!--<img src="assets/img/logo2.jpg" alt="Black Tie – Free Handsome Bootstrap Themes">  -->       
           <a class="navbar-brand" href="home.html">Darren Kwong</a>
         </div>
-
-
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#portfolio">Projects</a></li>
@@ -57,7 +54,6 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
 	<!-- +++++ Welcome Section +++++ -->
 	<div id="ww">
 	    <div class="container">
@@ -65,27 +61,22 @@
   			<div id = "profilePic" class="col-md-4 centered">		
   				<!-- <img class="img-responsive" src="assets/img/portfolio/darren_profile.jpg" alt="" /> -->
   			</div>
-
-  			<div class="col-md-8 centered">
-  				
-  				<p id="headline" class="text-center">Hi, I'm <span class="light-blue"><b>Darren Kwong</b></span> -- from San Jose, California. 
-  				
+  			<div class="col-md-8 centered">			
+  				<p id="headline" class="text-center">Hi, I'm <span class="light-blue"><b>Darren Kwong</b></span> -- from San Jose, California. 				
   				</p>
-  				<p>Web developer with a passion for integrating web technologies to solve business problems and improve upon existing methods. Experience in HTML5, CSS3, Bootstrap, Javascript, jQuery, Command Line, Firebase, Node JS, MySQL, and MongoDB. I come from a background in finance and digital marketing.</p>
-  								
+  				<p>Web developer with a passion for integrating web technologies to solve business problems and improve upon existing methods. Experience in HTML5, CSS3, Bootstrap, Javascript, jQuery, Command Line, Firebase, Node JS, MySQL, and MongoDB. I come from a background in finance and digital marketing.</p>					
   			</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div>
   <div id="portfolio">
-  <h1 class="text-center">Projects</h1> 
+  <h1 class="text-center">PROJECTS</h1> 
     <div class="container">
       <div class="row">
-        <div class="portfolio-item col-md-6">
+        <!-- <div class="portfolio-item col-md-6">
           <h3 class="text-center mb-3">NBA Stats App</h3>
           <iframe src="https://nba-app-fun.herokuapp.com/stats.html" name="nba-app" scrolling="auto" frameborder="no" align="center" height = "500px" width = "500px">
           </iframe>
-          <!-- <img class="img-responsive" src="http://via.placeholder.com/350x150"> -->
           <p>An app to follow the latest nba news and a chart where you can select two players and compare their stats</p>
         </div>
         <div class="portfolio-item col-md-6">
@@ -93,13 +84,61 @@
            <iframe src="https://mdsj-project1.github.io/Running-App/" name="nba-app" scrolling="auto" frameborder="no" align="center" height = "500px" width = "500px">
           </iframe>
           <p>An app designed to help you get fit while helping you explore your local community. Plot your route and find out how many calories you would burn while exploring. Directions automatically optimizes POIs and plots a round trip.</p>
+        </div> -->
+        <!-- Individual portfolio modules -->
+        <div class="col-md-4">
+          <div class="portfolio-container">
+            <div class="portfolio-wrapper">
+              <div class="img-wrap">
+                <img class="fill-img" src="./assets/img/runitdown.png">
+                <div class="img-description">
+                  <p class="title">RUN IT DOWN</p>
+                  <p class="description">Run Generator Web App</p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://github.com/MDSJ-Project1/Running-App"><i class="fa fa-github"></i> Github</a></p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://mdsj-project1.github.io/Running-App/"><i class="fa fa-desktop"></i> Live Site</a></p>    
+                </div>
+              </div>
+            </div>
+            <p class="title-below">RUN IT DOWN</p>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="portfolio-container">
+            <div class="portfolio-wrapper">
+              <div class="img-wrap">
+                <img class="fill-img" src="./assets/img/nbafun.png">
+                <div class="img-description">
+                  <p class="title">NBA STATS</p>
+                  <p class="description">Track NBA Player Stats</p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://github.com/LJSD/nba-app"><i class="fa fa-github"></i> Github</a></p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://nba-app-fun.herokuapp.com/stats.html"><i class="fa fa-desktop"></i> Live Site</a></p>    
+                </div>
+              </div>
+            </div>
+            <p class="title-below">NBA STATS</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-container">
+            <div class="portfolio-wrapper">
+              <div class="img-wrap">
+                <img class="fill-img" src="./assets/img/nytscraper.png">
+                <div class="img-description">
+                  <p class="title">NYT SCRAPER</p>
+                  <p class="description">Search NYT Articles</p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://github.com/LJSD/nba-app"><i class="fa fa-github"></i> Github</a></p>
+                  <p class="portfolio-icons"><a target="blank" href= "https://nyt-react-scraperapp.herokuapp.com/"><i class="fa fa-desktop"></i> Live Site</a></p>   
+                </div>
+              </div>
+            </div>
+            <p class="title-below">NYT SCRAPER</p>
+          </div>
+        </div>
+        <!-- End of individual portfolio modules -->
       </div>
     </div>
-  </div>
-	
-	<!-- +++++ Footer Section +++++ -->
-	
+  </div>	
+	<!-- +++++ Footer Section +++++ -->	
 	<div id="footer">
 		<div class="container">
 			<div class="row">
@@ -111,13 +150,9 @@
 						San Jose, CA
 					</p>
 				</div><!-- /col-lg-4 -->
-				
-				
-			
-			</div>
-		
+			</div>	
 		</div>
-<!-- 	<script>
+<!--Google Analytics <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -127,7 +162,6 @@
   ga('send', 'pageview');
   </script> -->
 	</div>
-	
-    <script src="assets/js/javascript.js"></script>
+  <script src="assets/js/javascript.js"></script>
   </body>
 </html>

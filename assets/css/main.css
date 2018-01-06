@@ -9,6 +9,85 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+h1 {
+    letter-spacing: 15px;
+    padding: 30px;    
+}
+
+.portfolio-container {
+    text-align: center;
+    color: black;
+}
+
+.portfolio-wrapper {
+  width: 100%;
+}
+
+.title, .title-below {
+    font-weight: bold;
+}
+
+.title-below {
+    margin-top: 10px;
+}
+
+.fill-img {
+  max-height: 253px;
+  width: 100%;
+}
+
+/* relevant styles */
+.img-wrap {
+  position: relative; 
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+  color: white;
+}
+
+.portfolio-icons a {
+    font-size: .8em;
+    color: white;
+    text-decoration: underline;
+}
+
+
+.img-description {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20%;
+}
+
+.description {
+  margin-top: 10%;
+  margin-bottom: 15%;
+
+}
+
+.portfolio-icons {
+  display: inline; 
+  margin: 5px;
+}
+
 #linkedin{
 	
 	height:25px;
@@ -26,6 +105,10 @@
     line-height: 44px;
     color: #333;
     font-weight: bold;
+}
+
+#portfolio {
+    margin-bottom: 10px;
 }
 
 #profilePic {
@@ -222,66 +305,4 @@ a:after {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #ffffff;
-}
-
-
-
-/* Blog Date*/
-bd {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #d2d2d2;
-	font-weight: 700;
-}
-
-/* Blog Author*/
-ba {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-/* Blog Quote */
-.bq {
-	font-size: 22px;
-	padding-top: 30px;
-}
-
-/* Blog Tags */
-bt {
-	font-size: 12px;
-}
-
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
-/* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
-    background:transparent url(../img/loader.gif) no-repeat center;
-}
-
-
-    .zoomOverlay {
-        position:absolute;
-        top:0; left:0;
-        bottom:0; right:0;
-        display:none;
-        background-image:url(../img/zoom.png);
-        background-repeat:no-repeat;
-        background-position:center;
-    }
-
-.zoom2 {
-	opacity: 1;
-}
-
-.zoom2:hover {
-	opacity: 0.5;
-}
-
-/* glyphicon Configuration */
-
-.glyphicon {
-	font-size: 40px;
-	color: #1abc9c;
 }
