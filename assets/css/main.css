@@ -16,9 +16,29 @@
   }
 }
 
+@media (max-width: 600px) {
+  .fill-img {
+    min-height: 280px;
+    width: 100%;
+  }
+}
+
+
 h1 {
     letter-spacing: 15px;
     padding: 30px;    
+}
+
+.skills {
+  background-color: grey;
+}
+
+.skills svg {
+  width: 100%;
+}
+
+.skills h1 {
+  color: white;
 }
 
 .portfolio-container {
