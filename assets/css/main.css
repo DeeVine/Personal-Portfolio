@@ -37,12 +37,6 @@ h1 {
   background-color: #a9a9a9;
 }
 
-.skills .row { 
-
-margin-bottom: 20px;
-
-}
-
 .skills svg, .skills img {
   width: 100%;
   padding: 5px;
@@ -150,7 +144,9 @@ margin-bottom: 20px;
 }
 
 #portfolio {
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2; 
 }
 
 #profilePic {
@@ -195,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 35px;
-	margin-top: 30px;
+	padding-top: 30px;
 	margin-bottom: 30px;
 }
 
