@@ -34,10 +34,10 @@
   margin-right: 20px
 }
 
-
-h1 {
-    letter-spacing: 15px;
-    padding: 30px;    
+.header-background {
+  background-color: #424242;
+  padding: 0px 4px;
+  color:white;
 }
 
 .logo-margin {
@@ -45,16 +45,13 @@ h1 {
 }
 
 .skills {
-  background-color: #a9a9a9;
+  padding-bottom: 6em;
+  background-color: #e2e2e2;
 }
 
 .skills svg, .skills img {
-  width: 100%;
-  padding: 5px;
-}
-
-.skills h1 {
-  color: white;
+  width: 60%;
+  padding: 10px;
 }
 
 .skill-logo {
@@ -155,9 +152,9 @@ h1 {
 }
 
 #portfolio {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f2f2f2; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f3f3f3; 
 }
 
 #profilePic {
@@ -177,35 +174,32 @@ h1 {
     background-size: 180%;
 }
 
-#profilePic img{
-    /*border-radius: 50%;*/
+body {
+	background-color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
-body {
-  	background-color: #ffffff;
-  	font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #555;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+h1 {
+  font-size: 35px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color:white;
+  letter-spacing: .8em;
+  padding: 30px;   
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #333;
+  font-weight: 700;
+  color: #333;
 }
-
-h1 {
-	font-size: 35px;
-	padding-top: 30px;
-	margin-bottom: 30px;
-}
-
-
 
 /* Paragraph & Typographic */
 p {
@@ -224,14 +218,14 @@ p {
 
 /* Links */
 a {
-    color: #157EF4;
-    word-wrap: break-word;
+  color: #157EF4;
+  word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
@@ -243,20 +237,20 @@ a:focus {
 
 a:before,
 a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 
@@ -328,7 +322,7 @@ a:after {
 #ww {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #f2f2f2;
+	background-color: #f3f3f3;
 }
 
 
@@ -346,19 +340,4 @@ a:after {
 	color: white;
 	text-transform: uppercase;
 	padding-bottom: 20px;
-}
-
-
-/* +++++ Color Wraps / Blog Page +++++ */
-
-#grey {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #f2f2f2;
-}
-
-#white {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #ffffff;
 }
