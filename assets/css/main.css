@@ -9,6 +9,12 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/*remove blue border on click*/
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
 @media (min-width: 992px) {
   .fill-img {
     height: 254px;
@@ -21,6 +27,11 @@
     min-height: 280px;
     width: 100%;
   }
+}
+
+.welcome-section {
+  margin-left: 20px;
+  margin-right: 20px
 }
 
 
@@ -131,7 +142,7 @@ h1 {
 }
 
 .img-responsive {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #headline{
@@ -153,13 +164,12 @@ h1 {
 	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 2px;
     background: #FFF;
     position: relative;
     display: block;
     border-radius: 50%;
     height: 300px;
-    width: 300px;
+    max-width: 300px;
     overflow: hidden; 
     background-image: url("../img/portfolio/darren_profile.jpg");
     background-position: center;
@@ -250,14 +260,22 @@ a:after {
 }
 
 
+.fa {
+  font-size: 24px;
+}
+
 .navbar {
 	text-transform: uppercase;
 	margin-bottom: 0px;
 }
 
+.navbar li {
+  line-height: 26px;
+}
+
 .navbar-inverse {
-	padding-bottom: 45px;
-	padding-top: 45px;
+	padding-bottom: 26px;
+	padding-top: 26px;
 }
 
 .navbar-inverse {
