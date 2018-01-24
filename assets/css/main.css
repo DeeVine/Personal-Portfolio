@@ -1,12 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: STANLEY - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*remove blue border on click*/
@@ -15,23 +6,18 @@
   outline: none;
 }
 
-@media (min-width: 992px) {
-  .fill-img {
-    height: 254px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .fill-img {
-    min-height: 280px;
-    width: 100%;
-  }
-}
-
 .welcome-section {
   margin-left: 20px;
   margin-right: 20px
+}
+
+.header {
+  display: flex;
+  /*height: 100px;*/
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: height 0.3s;
 }
 
 .header-background {
@@ -44,13 +30,17 @@
   margin-bottom: 10px;
 }
 
+#skills, #portfolio {
+  padding-top: 70px
+}
+
 .skills {
   padding-bottom: 6em;
   background-color: #e2e2e2;
 }
 
 .skills svg, .skills img {
-  width: 60%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -147,7 +137,6 @@
 }
 
 #portfolio {
-  padding-top: 10px;
   padding-bottom: 10px;
   background-color: #f3f3f3; 
 }
@@ -181,12 +170,12 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 24px;
   padding-top: 30px;
   margin-bottom: 30px;
   color:white;
-  letter-spacing: .8em;
-  padding: 30px;   
+  letter-spacing: .6em;
+  /*padding: 30px; */  
 }
 
 /* Titles */
@@ -249,22 +238,29 @@ hr {
 }
 
 .navbar {
+  height:100%;
 	text-transform: uppercase;
 	margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-header {
+  vertical-align: middle
 }
 
 .navbar li {
   line-height: 26px;
+  display: inline-block;
 }
 
 .navbar-inverse {
-	padding-bottom: 26px;
-	padding-top: 26px;
-}
-
-.navbar-inverse {
+  width: 100%;
 	background-color: #157EF4;
 	border-color: #16a085;
+}
+
+.navbar-inverse .container {
+  align-self: center;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -321,8 +317,8 @@ hr {
 
 #footer {
 	background-color: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-top: 55px;
+	padding-bottom: 100px; 
 }
 
 #footer p {
@@ -351,4 +347,78 @@ hr {
 
 .footer-contact > li > a:hover {
   color: #157EF4;
+}
+
+@media (min-width: 992px) {
+  .fill-img {
+    height: 254px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .fill-img {
+    min-height: 280px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  h1 {
+    font-size: 35px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    color:white;
+    letter-spacing: .8em;
+    padding: 30px;   
+  }
+
+  #ww {
+    padding-top: 200px;
+    padding-bottom: 180px;
+    background-color: #f3f3f3;
+  }
+
+  .navbar-inverse {
+    display: flex;
+    width: 100%;
+    background-color: #157EF4;
+    border-color: #16a085;  
+  }
+
+  .header {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: height 0.3s;
+  }
+
+  #skills, #portfolio {
+    padding-top: 65px
+  }
+
+  .skills svg, .skills img {
+    width: 60%;
+    padding: 10px;
+  }
+
+  header.smaller {
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  }
+
+  header.smaller .navbar-brand{
+    font-size: 18px;
+  }
+
+  header.smaller nav a {
+    line-height: 75px;
+  }
 }
