@@ -12,6 +12,10 @@
   }
 }
 
+.modal-backdrop { 
+  z-index: 0;
+}
+
 .contact-me {
   opacity: 1;
   color: #F0A3BE;
